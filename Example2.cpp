@@ -72,9 +72,9 @@ int main() {
         // cout << "Trajectory duration: " << duration << " s" << endl << endl;
         // cout << "Time      Position                  Velocity" << endl;
         for(double t = 0.0; t < duration; t += 0.1) {
-            printf("%7.4f, %7.4f, %7.4f\n", t, trajectory.getPosition(t)[0], trajectory.getPosition(t)[1]);
+            printf("%7.4f, %7.4f, %7.4f, %7.4f, %7.4f\n", t, trajectory.getPosition(t)[0], trajectory.getPosition(t)[1], trajectory.getVelocity(t)[0], trajectory.getVelocity(t)[1]);
         }
-        printf("%7.4f, %7.4f, %7.4f\n", duration, trajectory.getPosition(duration)[0], trajectory.getPosition(duration)[1]);
+        printf("%7.4f, %7.4f, %7.4f, %7.4f, %7.4f\n", duration, trajectory.getPosition(duration)[0], trajectory.getPosition(duration)[1], trajectory.getVelocity(duration)[0], trajectory.getVelocity(duration)[1]);
     }
     else {
         cout << "Trajectory generation failed." << endl;

@@ -2,6 +2,7 @@
 #include <list>
 #include <Eigen/Core>
 #include "Trajectory.h"
+#include <iostream>
 
 int numTests = 0;
 int numTestsFailed = 0;

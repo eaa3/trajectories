@@ -4,6 +4,9 @@ waypoints = [0 0;
              1.5 1.0;
              0.8 0.5;
              0.1 0.8];
+plot(trajectory(:,1),trajectory(:,4),trajectory(:,1),trajectory(:,5));
+figure;
+
 plot(trajectory(:,2), trajectory(:,3), '-')
 hold on;
 plot(waypoints(:,1), waypoints(:,2),'x')
